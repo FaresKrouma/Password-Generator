@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="home.js" defer></script>
+  <title>Password Generator</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h2>Password Generator</h2>
+      <div class="password-area">
+        <p id="password" class="password">GENERATE ME!</p>
+        <button id="save" title="Copy To Clipboard">
+          <i class="far fa-clipboard"></i>
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="password-option">
+        <label for="length">Password Length. <span>Min 8 - Max 20</span> </label>
+        <input id="length" type="number" min="8" max="20" value="14" onkeydown="return false">
+      </div>
+      <div class="password-option">
+        <label for="Symbols">Include Symbols.</label>
+        <input id="Symbols" type="checkbox">
+      </div>
+      <div class="password-option">
+        <label for="Numbers">Include Numbers.</label>
+        <input id="Numbers" type="checkbox">
+      </div>
+      <div class="password-option">
+        <label for="Upper">Include Uppercase letters.</label>
+        <input id="Upper" type="checkbox">
+      </div>
+      <div class="password-option">
+        <label for="Lower">Include Lowercase letters.</label>
+        <input id="Lower" type="checkbox" checked>
+      </div>
+      <button id="generate">Generate Password</button>
+    </main>
+  </div>
+</body>
+
+</html>
